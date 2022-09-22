@@ -3,6 +3,7 @@
     static void Main()
     {
     pilih:
+        // Deskripsi pemilihan
         Console.WriteLine("========================");
         Console.WriteLine("1. Penjumalahan");
         Console.WriteLine("2. Pengurangan");
@@ -13,6 +14,7 @@
         Console.Write("Masukkan angka 1 - 4 : ");
         string? pilih = Console.ReadLine();
 
+        // ? logika pemilihan 1 -4 & X/x
         if (pilih == "1")
         {
             Console.Write("Masukkan Angka Pertama : ");
@@ -47,7 +49,7 @@
         }
         else if (pilih == "X" || pilih == "x")
         {
-            Console.WriteLine("Terimakasih");
+            goto selesai;
         }
         else
         {
@@ -55,6 +57,9 @@
             goto pilih;
         }
 
+
+
+        // ? logika perulangan jika kondisi masih true
         Console.WriteLine("========================");
         Console.WriteLine("Ingin Menghitung Lagi ? [Y/N] ?");
         string? lanjut = Console.ReadLine();
@@ -62,10 +67,10 @@
         {
             goto pilih;
         }
-        else
-        {
-            Console.WriteLine("Terimakasih");
-        }
+
+    selesai:
+        Console.WriteLine("Terimakasih");
+
     }
 
     static void Penjumalahan(int angka1, int angka2)
