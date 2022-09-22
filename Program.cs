@@ -11,7 +11,7 @@
         Console.WriteLine("X. Keluar");
         Console.WriteLine("========================\n");
         Console.Write("Masukkan angka 1 - 4 : ");
-        string pilih = Console.ReadLine();
+        string? pilih = Console.ReadLine();
 
         if (pilih == "1")
         {
@@ -57,7 +57,7 @@
 
         Console.WriteLine("========================");
         Console.WriteLine("Ingin Menghitung Lagi ? [Y/N] ?");
-        string lanjut = Console.ReadLine();
+        string? lanjut = Console.ReadLine();
         if (lanjut == "Y" || lanjut == "y")
         {
             goto pilih;
